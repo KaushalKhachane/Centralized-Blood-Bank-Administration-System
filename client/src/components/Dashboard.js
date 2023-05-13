@@ -25,7 +25,7 @@ const Dashboard = () => {
   React.useEffect(()=>{
     const fetchappnts = async()=>{
     try{
-      const res = await axios.get("http://localhost:8801/appnts")
+      const res = await axios.get("http://localhost:8801/appnts1")
       setappnt(res.data);
       console.log(res)
     }

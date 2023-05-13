@@ -61,6 +61,7 @@ const navigate = useNavigate()
         })
         .then((response)=>{
           if(response.data.message){
+            alert("Invalid Credentials!!!")
             setLoginStatus(response.data.message);
           }else{
             setLoginStatus(response.data[0].user_email);
@@ -134,7 +135,6 @@ const navigate = useNavigate()
               />
               <TextField
                 margin="normal"
-                required
                 fullWidth
                 name="user_password"
                 label="Password"

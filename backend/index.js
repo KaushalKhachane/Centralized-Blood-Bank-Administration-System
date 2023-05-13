@@ -213,6 +213,14 @@ app.get("/appnts",(req,res)=>{
   })
 })
 
+app.get("/appnts1",(req,res)=>{
+  const q="SELECT app_email,app_name,app_phone_no,app_blood_type,app_camp_address,app_age,app_diabetic,app_date,app_time,app_donated from appointments WHERE `app_donated`='Y' limit 3"
+  db.query(q,(err,data)=>{
+    if(err) return res.json(err)
+    return res.json(data)
+  })
+})
+
 app.get("/hospitals",(req,res)=>{
   const q="SELECT * from hospitals"
   db.query(q,(err,data)=>{

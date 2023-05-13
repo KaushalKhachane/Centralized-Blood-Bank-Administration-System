@@ -1,5 +1,4 @@
 import React from "react";
-import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
@@ -82,13 +81,13 @@ Follow the below link to know more about us.
                 <p className="fa fa-envelope">
                 &nbsp;&nbsp;
                     </p>
-                    MIT World Peace University
+                    Vishwakarma institute of information technology
                     <br></br>
                     <p className="fa fa-phone">
                     &nbsp;&nbsp;
                     </p>
                     
-                    9876543210
+                    9359168397
                     
                     <br></br>
                     <p  className="fa fa-map-marker">
